@@ -143,7 +143,7 @@
         </div>
         <ul class="nav_list">
             <li>
-                <a href="#">
+                <a href="dashboardnew.php">
                     <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
                     <span class="title">Dashboard</span>
                 </a>
@@ -156,7 +156,7 @@
                 </a>
                 <ul class="dropdown-container">
                     <li><a href="attendance.php">Checking Attendance</a></li>
-                    <li><a href="evaluation.php">Evaluation</a></li>
+                    <li><a href="worker_evaluation.php">Evaluation</a></li>
                     <li><a href="#">Employee Training</a></li>
                     <li><a href="#">Leave Request</a></li>
                     <li><a href="#">Staff Notice</a></li>
@@ -184,13 +184,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#">
-                    <span class="icon"><i class="fas fa-chart-pie"></i></span>
-                    <span class="title">Recruitment</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
+                <a href="employee_list.php">
                     <span class="icon"><i class="fas fa-cogs"></i></span>
                     <span class="title">Personnel Records</span>
                 </a>
