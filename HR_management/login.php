@@ -32,11 +32,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($user) {
             // User authenticated, set session and redirect
             $_SESSION["email"] = $email;
-            header("Location: dashboard.php"); // Redirect to index.php
+            header("Location: dashboard.php"); // Redirect to dashboard.php
             exit(); // Terminate script execution after redirection
         } else {
-            // Invalid credentials
-            echo "Invalid email or password!";
+            // Invalid credentials, redirect back to the login page
+            header("Location: login.php"); // Redirect back to login.php
+            exit(); // Terminate script execution after redirection
         }
 
         // Close statement
@@ -74,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       position: relative;
       overflow: hidden;
     }
-
+ 
     .company-info,
     .login-panel {
       flex: 1;
@@ -225,23 +226,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div>
       <h2><span style="color: #ffffff;">SUPERPACK</span> ENTERPRISE</h2>
-      <p>HR & Management with us. Because your box matters.</p>
+      <p>Because your box matters, We care to serve you.</p>
     </div>
   </div>
   <div class="login-panel">
     <form method="post" action="login.php">
-      <h1>Welcome Admin!</h1>
+      <h1>Welcome!</h1>
       <input name="email" type="email" placeholder="Email" required>
       <input name="password" type="password" placeholder="Password" required>
       <input type="submit" value="Sign In">
     </form>
     <div class="login-footer">
       <p>Powered by Superpack</p>
-      <palign="center"><a href="forget_password.php">Forgot Password</a></p>
+      <p><a href="forgetpassword.php">Forgot Password</a></p>
     </div>
     <!-- New div for registration link -->
     <div class="register-link">
-      <p>Don't have an account? <a href="register.php">New Admin? Register Here</a></p>
+      <p>Don't have an account? <a href="register.php">Register Here</a></p>
     </div>
   </div>
 </div>
